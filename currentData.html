@@ -1,0 +1,49 @@
+<html>
+<head>
+    <script>
+        var getCurrentData = function(){
+            var request = new XMLHttpRequest();
+            request.open("GET", "https://api.covidtracking.com/v1/us/current.json", true);
+            
+            request.onload = function(){
+                    var currentArray = JSON.parse(this.response);
+                    for (var i = 0; i < currentArray.length; i++){
+                        var data = currentArray[i];
+                        //all the variables presented
+                        var dateChecked = data.dateChecked;
+                        var states = data.states;
+                        var positive = data.positive;
+                        var negative = data.negative;
+                        var pending = data.pending;
+                        var hospitalizedCurrently = data.hospitalizedCurrently;
+                        var hospitalizedCumulative = data.hospitalizedCumulative;
+                        var inIcuCurrently = data.inIcuCurrently;
+                        var inIcuCumulative = data.inIcuCumulative;
+                        var onVentilatorCurrently = data.onVentilatorCurrently;
+                        var recovered = data.recovered;
+                        var death = data.death;
+                        var totalTestResultsIncrease = data.totalTestResultsIncrease;
+
+                        //printed onto website
+                        document.write("Date: " + dateChecked);
+                        document.write("<br>Number of States & Territories: " + states);
+                        document.write("<br>Number of Positives Tests: " + positive);
+                        document.write("<br>Number of Negative Tests: " + negative);
+                        document.write("<br>Number of Tests Pending: " + pending);
+                        document.write("<br>Number of People Currently Hospitalized: " + hospitalizedCurrently);
+                        document.write("<br>Total Number of People Hospitalized: " + hospitalizedCumulative);
+                       
+                        document.write("<br>Number of People in ICU: " + inIcuCurrently);
+                        document.write("<br>Total Number of People That Have Been in ICU: " + inIcuCumulative);
+                        document.write("<br>Number of People on Ventilators: " + onVentilatorCurrently);
+                        document.write("<br>Number of People Recovered: " + recovered);
+                        document.write("<br>Number of People Dead: " + death);
+                        document.write("<br>Test Result Increase " + totalTestResultsIncrease);
+                    }
+                };
+                request.send();
+            }
+    </script>
+</head>
+    <body onload = "getCurrentData()">
+    </body>
