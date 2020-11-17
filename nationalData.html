@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" /></head>
+    
+     <div class = "table">
+     <h4><a href = "index.html">Back</a></h4>
+     <table>
+        <th>National Covid Data</th>
+        <tr>
+            <td>Date</td>
+            <td id = "date"></td>
+        </tr>
+        <tr>
+            <td>States & Territories</td>
+            <td id = "states"></td>
+        </tr>
+        <tr>
+            <td>Positive</td>
+            <td id = "positive"></td>
+        </tr>
+        <tr>
+            <td>Negative</td>
+            <td id = "negative"></td>
+        </tr>
+        <tr>
+            <td>Pending Results</td>
+            <td id = "pending"></td>
+        </tr>
+        <tr>
+            <td>Hospitalized Currently</td>
+            <td id = "hospitalizedCurrently"></td>
+        </tr>
+        <tr>
+            <td>Hospitalized Cumulative</td>
+            <td id = "hospitalizedCumulative"></td>
+        </tr>
+        <tr>
+            <td>In ICU Currently</td>
+            <td id = "inIcuCurrently"></td>
+        </tr>
+        <tr>
+            <td>In ICU Cumulative</td>
+            <td id = "inIcuCumulative"></td>
+        </tr>
+        <tr>
+            <td>On Ventilator Currently</td>
+            <td id = "onVentilatorCurrently"></td>
+        </tr>
+        <tr>
+            <td>Recovered</td>
+            <td id = "recovered"></td>
+        </tr>
+        <tr>
+            <td>Dead</td>
+            <td id = "death"></td>
+        </tr>
+        <tr>
+            <td>Total Test Results</td>
+            <td id = "totalTestResults"></td>
+        </tr>
+     </table>
+     <br>
+     <h4><a href = "index.html">Back</a></h4>
+    </div>
+    <script>
+     var getNationalStats = function()
+     {
+        var request = new XMLHttpRequest();
+        request.open("GET", "https://api.covidtracking.com/v1/us/current.json", true);
+        request.onload = function()
+        {
+            var currentArray = JSON.parse(this.response);
+            for(var i=0; i<currentArray.length; i++)
+            { 
+                var data = currentArray[i];
+              
+                document.getElementById("date").innerHTML = data.date;
+                document.getElementById("states").innerHTML = data.states;
+                document.getElementById("positive").innerHTML = data.positive;
+                document.getElementById("negative").innerHTML = data.negative;
+                document.getElementById("pending").innerHTML = data.pending;
+                document.getElementById("hospitalizedCurrently").innerHTML = data.hospitalizedCurrently;
+                document.getElementById("hospitalizedCumulative").innerHTML = data.hospitalizedCumulative;
+                document.getElementById("inIcuCurrently").innerHTML = data.inIcuCurrently;
+                document.getElementById("inIcuCumulative").innerHTML = data.inIcuCumulative;
+                document.getElementById("onVentilatorCurrently").innerHTML = data.onVentilatorCurrently;
+                document.getElementById("recovered").innerHTML = data.recovered;
+                document.getElementById("death").innerHTML = data.death;
+                document.getElementById("totalTestResults").innerHTML = data.totalTestResults;
+            }
+        }
+        request.send();
+     } 
+    </script>
+    <body onload="getNationalStats()">
+      <!-- Bootstrap core JS-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Third party plugin JS-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+      <!-- Core theme JS-->
+      <script src="js/scripts.js"></script>
+    </body>
+</html>

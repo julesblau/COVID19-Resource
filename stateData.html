@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" /></head>
+
+     <h4><a href = "index.html">Back</a></h4>
+     <div class = "table">
+        <table>
+            <tr>
+                <th>State/Territory Name</th>
+                <th>Time Updated</th>
+                <th>Initials</th>
+                <th>Total Positive Tests</th>
+                <th>Total Negative Tests</th>
+                <th>Pending Results</th>
+                <th>Hospitalized Currently</th>
+                <th>Hospitalized Cumulative</th>
+                <th>In ICU Currently</th>
+                <th>In ICU Cumulative</th>
+                <th>On Ventilator Currently</th>
+                <th>Recovered</th>
+                <th>Dead</th>
+                <th>Total Increase in Test Results</th>
+            </tr>
+            <tr>
+                <td>Alabama</td>
+                <td id = "checkTimeEt1"></td>
+                <td id = "state1"></td>
+                <td id = "positive1"></td>
+                <td id = "negative1"></td>
+                <td id = "pending1"></td>
+                <td id = "hospitalizedCurrently1"></td>
+                <td id = "hospitalizedCumulative1"></td>
+                <td id = "inIcuCurrently1"></td>
+                <td id = "inIcuCumulative1"></td>
+                <td id = "onVentilatorCurrently1"></td>
+                <td id = "recovered1"></td>
+                <td id = "death1"></td>
+                <td id = "totalTestResultsIncrease1"></td>
+            </tr>
+            <tr>
+                <td>Alaska</td>
+                <td id = "checkTimeEt0"></td>
+                <td id = "state0"></td>
+                <td id = "positive0"></td>
+                <td id = "negative0"></td>
+                <td id = "pending0"></td>
+                <td id = "hospitalizedCurrently0"></td>
+                <td id = "hospitalizedCumulative0"></td>
+                <td id = "inIcuCurrently0"></td>
+                <td id = "inIcuCumulative0"></td>
+                <td id = "onVentilatorCurrently0"></td>
+                <td id = "recovered0"></td>
+                <td id = "death0"></td>
+                <td id = "totalTestResultsIncrease0"></td>
+            </tr>
+            <tr>
+                <td>American Samoa</td>
+                <td id = "checkTimeEt3"></td>
+                <td id = "state3"></td>
+                <td id = "positive3"></td>
+                <td id = "negative3"></td>
+                <td id = "pending3"></td>
+                <td id = "hospitalizedCurrently3"></td>
+                <td id = "hospitalizedCumulative3"></td>
+                <td id = "inIcuCurrently3"></td>
+                <td id = "inIcuCumulative3"></td>
+                <td id = "onVentilatorCurrently3"></td>
+                <td id = "recovered3"></td>
+                <td id = "death3"></td>
+                <td id = "totalTestResultsIncrease3"></td>
+            </tr>
+            <tr>
+                <td>Arizona</td>
+                <td id = "checkTimeEt4"></td>
+                <td id = "state4"></td>
+                <td id = "positive4"></td>
+                <td id = "negative4"></td>
+                <td id = "pending4"></td>
+                <td id = "hospitalizedCurrently4"></td>
+                <td id = "hospitalizedCumulative4"></td>
+                <td id = "inIcuCurrently4"></td>
+                <td id = "inIcuCumulative4"></td>
+                <td id = "onVentilatorCurrently4"></td>
+                <td id = "recovered4"></td>
+                <td id = "death4"></td>
+                <td id = "totalTestResultsIncrease4"></td>
+            </tr>
+            <tr>
+                <td>Arkansas</td>
+                <td id = "checkTimeEt2"></td>
+                <td id = "state2"></td>
+                <td id = "positive2"></td>
+                <td id = "negative2"></td>
+                <td id = "pending2"></td>
+                <td id = "hospitalizedCurrently2"></td>
+                <td id = "hospitalizedCumulative2"></td>
+                <td id = "inIcuCurrently2"></td>
+                <td id = "inIcuCumulative2"></td>
+                <td id = "onVentilatorCurrently2"></td>
+                <td id = "recovered2"></td>
+                <td id = "death2"></td>
+                <td id = "totalTestResultsIncrease2"></td>
+            </tr>
+            <tr>
+                <td>California</td>
+                <td id = "checkTimeEt5"></td>
+                <td id = "state5"></td>
+                <td id = "positive5"></td>
+                <td id = "negative5"></td>
+                <td id = "pending5"></td>
+                <td id = "hospitalizedCurrently5"></td>
+                <td id = "hospitalizedCumulative5"></td>
+                <td id = "inIcuCurrently5"></td>
+                <td id = "inIcuCumulative5"></td>
+                <td id = "onVentilatorCurrently5"></td>
+                <td id = "recovered5"></td>
+                <td id = "death5"></td>
+                <td id = "totalTestResultsIncrease5"></td>
+            </tr>
+            <tr>
+                <td>Colorado</td>
+                <td id = "checkTimeEt6"></td>
+                <td id = "state6"></td>
+                <td id = "positive6"></td>
+                <td id = "negative6"></td>
+                <td id = "pending6"></td>
+                <td id = "hospitalizedCurrently6"></td>
+                <td id = "hospitalizedCumulative6"></td>
+                <td id = "inIcuCurrently6"></td>
+                <td id = "inIcuCumulative6"></td>
+                <td id = "onVentilatorCurrently6"></td>
+                <td id = "recovered6"></td>
+                <td id = "death6"></td>
+                <td id = "totalTestResultsIncrease6"></td>
+            </tr>
+            <tr>
+                <td>Connecticut</td>
+                <td id = "checkTimeEt7"></td>
+                <td id = "state7"></td>
+                <td id = "positive7"></td>
+                <td id = "negative7"></td>
+                <td id = "pending7"></td>
+                <td id = "hospitalizedCurrently7"></td>
+                <td id = "hospitalizedCumulative7"></td>
+                <td id = "inIcuCurrently7"></td>
+                <td id = "inIcuCumulative7"></td>
+                <td id = "onVentilatorCurrently7"></td>
+                <td id = "recovered7"></td>
+                <td id = "death7"></td>
+                <td id = "totalTestResultsIncrease7"></td>
+            </tr>
+            <tr>
+                <td>DC</td>
+                <td id = "checkTimeEt8"></td>
+                <td id = "state8"></td>
+                <td id = "positive8"></td>
+                <td id = "negative8"></td>
+                <td id = "pending8"></td>
+                <td id = "hospitalizedCurrently8"></td>
+                <td id = "hospitalizedCumulative8"></td>
+                <td id = "inIcuCurrently8"></td>
+                <td id = "inIcuCumulative8"></td>
+                <td id = "onVentilatorCurrently8"></td>
+                <td id = "recovered8"></td>
+                <td id = "death8"></td>
+                <td id = "totalTestResultsIncrease8"></td>
+            </tr>
+            <tr>
+                <td>Delaware</td>
+                <td id = "checkTimeEt9"></td>
+                <td id = "state9"></td>
+                <td id = "positive9"></td>
+                <td id = "negative9"></td>
+                <td id = "pending9"></td>
+                <td id = "hospitalizedCurrently9"></td>
+                <td id = "hospitalizedCumulative9"></td>
+                <td id = "inIcuCurrently9"></td>
+                <td id = "inIcuCumulative9"></td>
+                <td id = "onVentilatorCurrently9"></td>
+                <td id = "recovered9"></td>
+                <td id = "death9"></td>
+                <td id = "totalTestResultsIncrease9"></td>
+            </tr>
+            <tr>
+                <td>Florida</td>
+                <td id = "checkTimeEt10"></td>
+                <td id = "state10"></td>
+                <td id = "positive10"></td>
+                <td id = "negative10"></td>
+                <td id = "pending10"></td>
+                <td id = "hospitalizedCurrently10"></td>
+                <td id = "hospitalizedCumulative10"></td>
+                <td id = "inIcuCurrently10"></td>
+                <td id = "inIcuCumulative10"></td>
+                <td id = "onVentilatorCurrently10"></td>
+                <td id = "recovered10"></td>
+                <td id = "death10"></td>
+                <td id = "totalTestResultsIncrease10"></td>
+            </tr>
+            <tr>
+                <td>Georgia</td>
+                <td id = "checkTimeEt11"></td>
+                <td id = "state11"></td>
+                <td id = "positive11"></td>
+                <td id = "negative11"></td>
+                <td id = "pending11"></td>
+                <td id = "hospitalizedCurrently11"></td>
+                <td id = "hospitalizedCumulative11"></td>
+                <td id = "inIcuCurrently11"></td>
+                <td id = "inIcuCumulative11"></td>
+                <td id = "onVentilatorCurrently11"></td>
+                <td id = "recovered11"></td>
+                <td id = "death11"></td>
+                <td id = "totalTestResultsIncrease11"></td>
+            </tr>
+            <tr>
+                <td>Guam</td>
+                <td id = "checkTimeEt12"></td>
+                <td id = "state12"></td>
+                <td id = "positive12"></td>
+                <td id = "negative12"></td>
+                <td id = "pending12"></td>
+                <td id = "hospitalizedCurrently12"></td>
+                <td id = "hospitalizedCumulative12"></td>
+                <td id = "inIcuCurrently12"></td>
+                <td id = "inIcuCumulative12"></td>
+                <td id = "onVentilatorCurrently12"></td>
+                <td id = "recovered12"></td>
+                <td id = "death12"></td>
+                <td id = "totalTestResultsIncrease12"></td>
+            </tr>
+            <tr>
+                <td>Hawaii</td>
+                <td id = "checkTimeEt13"></td>
+                <td id = "state13"></td>
+                <td id = "positive13"></td>
+                <td id = "negative13"></td>
+                <td id = "pending13"></td>
+                <td id = "hospitalizedCurrently13"></td>
+                <td id = "hospitalizedCumulative13"></td>
+                <td id = "inIcuCurrently13"></td>
+                <td id = "inIcuCumulative13"></td>
+                <td id = "onVentilatorCurrently13"></td>
+                <td id = "recovered13"></td>
+                <td id = "death13"></td>
+                <td id = "totalTestResultsIncrease13"></td>
+            </tr>
+            <tr>
+                <td>Idaho</td>
+                <td id = "checkTimeEt15"></td>
+                <td id = "state15"></td>
+                <td id = "positive15"></td>
+                <td id = "negative15"></td>
+                <td id = "pending15"></td>
+                <td id = "hospitalizedCurrently15"></td>
+                <td id = "hospitalizedCumulative15"></td>
+                <td id = "inIcuCurrently15"></td>
+                <td id = "inIcuCumulative15"></td>
+                <td id = "onVentilatorCurrently15"></td>
+                <td id = "recovered15"></td>
+                <td id = "death15"></td>
+                <td id = "totalTestResultsIncrease15"></td>
+            </tr>
+            <tr>
+                <td>Illinois</td>
+                <td id = "checkTimeEt16"></td>
+                <td id = "state16"></td>
+                <td id = "positive16"></td>
+                <td id = "negative16"></td>
+                <td id = "pending16"></td>
+                <td id = "hospitalizedCurrently16"></td>
+                <td id = "hospitalizedCumulative16"></td>
+                <td id = "inIcuCurrently16"></td>
+                <td id = "inIcuCumulative16"></td>
+                <td id = "onVentilatorCurrently16"></td>
+                <td id = "recovered16"></td>
+                <td id = "death16"></td>
+                <td id = "totalTestResultsIncrease16"></td>
+            </tr>
+            <tr>
+                <td>Indiana</td>
+                <td id = "checkTimeEt17"></td>
+                <td id = "state17"></td>
+                <td id = "positive17"></td>
+                <td id = "negative17"></td>
+                <td id = "pending17"></td>
+                <td id = "hospitalizedCurrently17"></td>
+                <td id = "hospitalizedCumulative17"></td>
+                <td id = "inIcuCurrently17"></td>
+                <td id = "inIcuCumulative17"></td>
+                <td id = "onVentilatorCurrently17"></td>
+                <td id = "recovered17"></td>
+                <td id = "death17"></td>
+                <td id = "totalTestResultsIncrease17"></td>
+            </tr>
+            <tr>
+                <td>Iowa</td>
+                <td id = "checkTimeEt14"></td>
+                <td id = "state14"></td>
+                <td id = "positive14"></td>
+                <td id = "negative14"></td>
+                <td id = "pending14"></td>
+                <td id = "hospitalizedCurrently14"></td>
+                <td id = "hospitalizedCumulative14"></td>
+                <td id = "inIcuCurrently14"></td>
+                <td id = "inIcuCumulative14"></td>
+                <td id = "onVentilatorCurrently14"></td>
+                <td id = "recovered14"></td>
+                <td id = "death14"></td>
+                <td id = "totalTestResultsIncrease14"></td>
+            </tr>
+            <tr>
+                <td>Kansas</td>
+                <td id = "checkTimeEt18"></td>
+                <td id = "state18"></td>
+                <td id = "positive18"></td>
+                <td id = "negative18"></td>
+                <td id = "pending18"></td>
+                <td id = "hospitalizedCurrently18"></td>
+                <td id = "hospitalizedCumulative18"></td>
+                <td id = "inIcuCurrently18"></td>
+                <td id = "inIcuCumulative18"></td>
+                <td id = "onVentilatorCurrently18"></td>
+                <td id = "recovered18"></td>
+                <td id = "death18"></td>
+                <td id = "totalTestResultsIncrease18"></td>
+            </tr>
+            <tr>
+                <td>Kentucky</td>
+                <td id = "checkTimeEt19"></td>
+                <td id = "state19"></td>
+                <td id = "positive19"></td>
+                <td id = "negative19"></td>
+                <td id = "pending19"></td>
+                <td id = "hospitalizedCurrently19"></td>
+                <td id = "hospitalizedCumulative19"></td>
+                <td id = "inIcuCurrently19"></td>
+                <td id = "inIcuCumulative19"></td>
+                <td id = "onVentilatorCurrently19"></td>
+                <td id = "recovered19"></td>
+                <td id = "death19"></td>
+                <td id = "totalTestResultsIncrease19"></td>
+            </tr>
+            <tr>
+                <td>Louisiana</td>
+                <td id = "checkTimeEt20"></td>
+                <td id = "state20"></td>
+                <td id = "positive20"></td>
+                <td id = "negative20"></td>
+                <td id = "pending20"></td>
+                <td id = "hospitalizedCurrently20"></td>
+                <td id = "hospitalizedCumulative20"></td>
+                <td id = "inIcuCurrently20"></td>
+                <td id = "inIcuCumulative20"></td>
+                <td id = "onVentilatorCurrently20"></td>
+                <td id = "recovered20"></td>
+                <td id = "death20"></td>
+                <td id = "totalTestResultsIncrease20"></td>
+            </tr>
+            <tr>
+                <td>Maine</td>
+                <td id = "checkTimeEt23"></td>
+                <td id = "state23"></td>
+                <td id = "positive23"></td>
+                <td id = "negative23"></td>
+                <td id = "pending23"></td>
+                <td id = "hospitalizedCurrently23"></td>
+                <td id = "hospitalizedCumulative23"></td>
+                <td id = "inIcuCurrently23"></td>
+                <td id = "inIcuCumulative23"></td>
+                <td id = "onVentilatorCurrently23"></td>
+                <td id = "recovered23"></td>
+                <td id = "death23"></td>
+                <td id = "totalTestResultsIncrease23"></td>
+            </tr>
+            <tr>
+                <td>Maryland</td>
+                <td id = "checkTimeEt22"></td>
+                <td id = "state22"></td>
+                <td id = "positive22"></td>
+                <td id = "negative22"></td>
+                <td id = "pending22"></td>
+                <td id = "hospitalizedCurrently22"></td>
+                <td id = "hospitalizedCumulative22"></td>
+                <td id = "inIcuCurrently22"></td>
+                <td id = "inIcuCumulative22"></td>
+                <td id = "onVentilatorCurrently22"></td>
+                <td id = "recovered22"></td>
+                <td id = "death22"></td>
+                <td id = "totalTestResultsIncrease22"></td>
+            </tr>
+            <tr>
+                <td>Massachusetts</td>
+                <td id = "checkTimeEt21"></td>
+                <td id = "state21"></td>
+                <td id = "positive21"></td>
+                <td id = "negative21"></td>
+                <td id = "pending21"></td>
+                <td id = "hospitalizedCurrently21"></td>
+                <td id = "hospitalizedCumulative21"></td>
+                <td id = "inIcuCurrently21"></td>
+                <td id = "inIcuCumulative21"></td>
+                <td id = "onVentilatorCurrently21"></td>
+                <td id = "recovered21"></td>
+                <td id = "death21"></td>
+                <td id = "totalTestResultsIncrease21"></td>
+            </tr>
+            <tr>
+                <td>Michigan</td>
+                <td id = "checkTimeEt24"></td>
+                <td id = "state24"></td>
+                <td id = "positive24"></td>
+                <td id = "negative24"></td>
+                <td id = "pending24"></td>
+                <td id = "hospitalizedCurrently24"></td>
+                <td id = "hospitalizedCumulative24"></td>
+                <td id = "inIcuCurrently24"></td>
+                <td id = "inIcuCumulative24"></td>
+                <td id = "onVentilatorCurrently24"></td>
+                <td id = "recovered24"></td>
+                <td id = "death24"></td>
+                <td id = "totalTestResultsIncrease24"></td>
+            </tr>
+            <tr>
+                <td>Minnesota</td>
+                <td id = "checkTimeEt25"></td>
+                <td id = "state25"></td>
+                <td id = "positive25"></td>
+                <td id = "negative25"></td>
+                <td id = "pending25"></td>
+                <td id = "hospitalizedCurrently25"></td>
+                <td id = "hospitalizedCumulative25"></td>
+                <td id = "inIcuCurrently25"></td>
+                <td id = "inIcuCumulative25"></td>
+                <td id = "onVentilatorCurrently25"></td>
+                <td id = "recovered25"></td>
+                <td id = "death25"></td>
+                <td id = "totalTestResultsIncrease25"></td>
+            </tr>
+            <tr>
+                <td>Mississippi</td>
+                <td id = "checkTimeEt28"></td>
+                <td id = "state28"></td>
+                <td id = "positive28"></td>
+                <td id = "negative28"></td>
+                <td id = "pending28"></td>
+                <td id = "hospitalizedCurrently28"></td>
+                <td id = "hospitalizedCumulative28"></td>
+                <td id = "inIcuCurrently28"></td>
+                <td id = "inIcuCumulative28"></td>
+                <td id = "onVentilatorCurrently28"></td>
+                <td id = "recovered28"></td>
+                <td id = "death28"></td>
+                <td id = "totalTestResultsIncrease28"></td>
+            </tr>
+            <tr>
+                <td>Missouri</td>
+                <td id = "checkTimeEt26"></td>
+                <td id = "state26"></td>
+                <td id = "positive26"></td>
+                <td id = "negative26"></td>
+                <td id = "pending26"></td>
+                <td id = "hospitalizedCurrently26"></td>
+                <td id = "hospitalizedCumulative26"></td>
+                <td id = "inIcuCurrently26"></td>
+                <td id = "inIcuCumulative26"></td>
+                <td id = "onVentilatorCurrently26"></td>
+                <td id = "recovered26"></td>
+                <td id = "death26"></td>
+                <td id = "totalTestResultsIncrease26"></td>
+            </tr>
+            <tr>
+                <td>Montana</td>
+                <td id = "checkTimeEt29"></td>
+                <td id = "state29"></td>
+                <td id = "positive29"></td>
+                <td id = "negative29"></td>
+                <td id = "pending29"></td>
+                <td id = "hospitalizedCurrently29"></td>
+                <td id = "hospitalizedCumulative29"></td>
+                <td id = "inIcuCurrently29"></td>
+                <td id = "inIcuCumulative29"></td>
+                <td id = "onVentilatorCurrently29"></td>
+                <td id = "recovered29"></td>
+                <td id = "death29"></td>
+                <td id = "totalTestResultsIncrease29"></td>
+            </tr>
+            <tr>
+                <td>Nebraska</td>
+                <td id = "checkTimeEt32"></td>
+                <td id = "state32"></td>
+                <td id = "positive32"></td>
+                <td id = "negative32"></td>
+                <td id = "pending32"></td>
+                <td id = "hospitalizedCurrently32"></td>
+                <td id = "hospitalizedCumulative32"></td>
+                <td id = "inIcuCurrently32"></td>
+                <td id = "inIcuCumulative32"></td>
+                <td id = "onVentilatorCurrently32"></td>
+                <td id = "recovered32"></td>
+                <td id = "death32"></td>
+                <td id = "totalTestResultsIncrease32"></td>
+            </tr>
+            <tr>
+                <td>Nevada</td>
+                <td id = "checkTimeEt36"></td>
+                <td id = "state36"></td>
+                <td id = "positive36"></td>
+                <td id = "negative36"></td>
+                <td id = "pending36"></td>
+                <td id = "hospitalizedCurrently36"></td>
+                <td id = "hospitalizedCumulative36"></td>
+                <td id = "inIcuCurrently36"></td>
+                <td id = "inIcuCumulative36"></td>
+                <td id = "onVentilatorCurrently36"></td>
+                <td id = "recovered36"></td>
+                <td id = "death36"></td>
+                <td id = "totalTestResultsIncrease36"></td>
+            </tr>
+            <tr>
+                <td>New Hampshire</td>
+                <td id = "checkTimeEt33"></td>
+                <td id = "state33"></td>
+                <td id = "positive33"></td>
+                <td id = "negative33"></td>
+                <td id = "pending33"></td>
+                <td id = "hospitalizedCurrently33"></td>
+                <td id = "hospitalizedCumulative33"></td>
+                <td id = "inIcuCurrently33"></td>
+                <td id = "inIcuCumulative33"></td>
+                <td id = "onVentilatorCurrently33"></td>
+                <td id = "recovered33"></td>
+                <td id = "death33"></td>
+                <td id = "totalTestResultsIncrease33"></td>
+            </tr>
+            <tr>
+                <td>New Jersey</td>
+                <td id = "checkTimeEt34"></td>
+                <td id = "state34"></td>
+                <td id = "positive34"></td>
+                <td id = "negative34"></td>
+                <td id = "pending34"></td>
+                <td id = "hospitalizedCurrently34"></td>
+                <td id = "hospitalizedCumulative34"></td>
+                <td id = "inIcuCurrently34"></td>
+                <td id = "inIcuCumulative34"></td>
+                <td id = "onVentilatorCurrently34"></td>
+                <td id = "recovered34"></td>
+                <td id = "death34"></td>
+                <td id = "totalTestResultsIncrease34"></td>
+            </tr>
+            <tr>
+                <td>New Mexico</td>
+                <td id = "checkTimeEt35"></td>
+                <td id = "state35"></td>
+                <td id = "positive35"></td>
+                <td id = "negative35"></td>
+                <td id = "pending35"></td>
+                <td id = "hospitalizedCurrently35"></td>
+                <td id = "hospitalizedCumulative35"></td>
+                <td id = "inIcuCurrently35"></td>
+                <td id = "inIcuCumulative35"></td>
+                <td id = "onVentilatorCurrently35"></td>
+                <td id = "recovered35"></td>
+                <td id = "death35"></td>
+                <td id = "totalTestResultsIncrease35"></td>
+            </tr>
+      
+            <tr>
+                <td>New York</td>
+                <td id = "checkTimeEt37"></td>
+                <td id = "state37"></td>
+                <td id = "positive37"></td>
+                <td id = "negative37"></td>
+                <td id = "pending37"></td>
+                <td id = "hospitalizedCurrently37"></td>
+                <td id = "hospitalizedCumulative37"></td>
+                <td id = "inIcuCurrently37"></td>
+                <td id = "inIcuCumulative37"></td>
+                <td id = "onVentilatorCurrently37"></td>
+                <td id = "recovered37"></td>
+                <td id = "death37"></td>
+                <td id = "totalTestResultsIncrease37"></td>
+            </tr>     
+            <tr>
+                <td>North Carolina</td>
+                <td id = "checkTimeEt30"></td>
+                <td id = "state30"></td>
+                <td id = "positive30"></td>
+                <td id = "negative30"></td>
+                <td id = "pending30"></td>
+                <td id = "hospitalizedCurrently30"></td>
+                <td id = "hospitalizedCumulative30"></td>
+                <td id = "inIcuCurrently30"></td>
+                <td id = "inIcuCumulative30"></td>
+                <td id = "onVentilatorCurrently30"></td>
+                <td id = "recovered30"></td>
+                <td id = "death30"></td>
+                <td id = "totalTestResultsIncrease30"></td>
+            </tr>
+            <tr>
+                <td>North Dakota</td>
+                <td id = "checkTimeEt31"></td>
+                <td id = "state31"></td>
+                <td id = "positive31"></td>
+                <td id = "negative31"></td>
+                <td id = "pending31"></td>
+                <td id = "hospitalizedCurrently31"></td>
+                <td id = "hospitalizedCumulative31"></td>
+                <td id = "inIcuCurrently31"></td>
+                <td id = "inIcuCumulative31"></td>
+                <td id = "onVentilatorCurrently31"></td>
+                <td id = "recovered31"></td>
+                <td id = "death31"></td>
+                <td id = "totalTestResultsIncrease31"></td>
+            </tr>
+            <tr>
+                <td>Northern Mariana Islands</td>
+                <td id = "checkTimeEt27"></td>
+                <td id = "state27"></td>
+                <td id = "positive27"></td>
+                <td id = "negative27"></td>
+                <td id = "pending27"></td>
+                <td id = "hospitalizedCurrently27"></td>
+                <td id = "hospitalizedCumulative27"></td>
+                <td id = "inIcuCurrently27"></td>
+                <td id = "inIcuCumulative27"></td>
+                <td id = "onVentilatorCurrently27"></td>
+                <td id = "recovered27"></td>
+                <td id = "death27"></td>
+                <td id = "totalTestResultsIncrease27"></td>
+            </tr>  
+            <tr>
+                <td>Ohio</td>
+                <td id = "checkTimeEt38"></td>
+                <td id = "state38"></td>
+                <td id = "positive38"></td>
+                <td id = "negative38"></td>
+                <td id = "pending38"></td>
+                <td id = "hospitalizedCurrently38"></td>
+                <td id = "hospitalizedCumulative38"></td>
+                <td id = "inIcuCurrently38"></td>
+                <td id = "inIcuCumulative38"></td>
+                <td id = "onVentilatorCurrently38"></td>
+                <td id = "recovered38"></td>
+                <td id = "death38"></td>
+                <td id = "totalTestResultsIncrease38"></td>
+            </tr>
+            <tr>
+                <td>Oklahoma</td>
+                <td id = "checkTimeEt39"></td>
+                <td id = "state39"></td>
+                <td id = "positive39"></td>
+                <td id = "negative39"></td>
+                <td id = "pending39"></td>
+                <td id = "hospitalizedCurrently39"></td>
+                <td id = "hospitalizedCumulative39"></td>
+                <td id = "inIcuCurrently39"></td>
+                <td id = "inIcuCumulative39"></td>
+                <td id = "onVentilatorCurrently39"></td>
+                <td id = "recovered39"></td>
+                <td id = "death39"></td>
+                <td id = "totalTestResultsIncrease39"></td>
+            </tr>
+            <tr>
+                <td>Oregon</td>
+                <td id = "checkTimeEt40"></td>
+                <td id = "state40"></td>
+                <td id = "positive40"></td>
+                <td id = "negative40"></td>
+                <td id = "pending40"></td>
+                <td id = "hospitalizedCurrently40"></td>
+                <td id = "hospitalizedCumulative40"></td>
+                <td id = "inIcuCurrently40"></td>
+                <td id = "inIcuCumulative40"></td>
+                <td id = "onVentilatorCurrently40"></td>
+                <td id = "recovered40"></td>
+                <td id = "death40"></td>
+                <td id = "totalTestResultsIncrease40"></td>
+            </tr>
+            <tr>
+                <td>Pennsylvania</td>
+                <td id = "checkTimeEt41"></td>
+                <td id = "state41"></td>
+                <td id = "positive41"></td>
+                <td id = "negative41"></td>
+                <td id = "pending41"></td>
+                <td id = "hospitalizedCurrently41"></td>
+                <td id = "hospitalizedCumulative41"></td>
+                <td id = "inIcuCurrently41"></td>
+                <td id = "inIcuCumulative41"></td>
+                <td id = "onVentilatorCurrently41"></td>
+                <td id = "recovered41"></td>
+                <td id = "death41"></td>
+                <td id = "totalTestResultsIncrease41"></td>
+            </tr>
+            <tr>
+                <td>Puerto Rico</td>
+                <td id = "checkTimeEt42"></td>
+                <td id = "state42"></td>
+                <td id = "positive42"></td>
+                <td id = "negative42"></td>
+                <td id = "pending42"></td>
+                <td id = "hospitalizedCurrently42"></td>
+                <td id = "hospitalizedCumulative42"></td>
+                <td id = "inIcuCurrently42"></td>
+                <td id = "inIcuCumulative42"></td>
+                <td id = "onVentilatorCurrently42"></td>
+                <td id = "recovered42"></td>
+                <td id = "death42"></td>
+                <td id = "totalTestResultsIncrease42"></td>
+            </tr>
+            <tr>
+                <td>Rhode Island</td>
+                <td id = "checkTimeEt43"></td>
+                <td id = "state43"></td>
+                <td id = "positive43"></td>
+                <td id = "negative43"></td>
+                <td id = "pending43"></td>
+                <td id = "hospitalizedCurrently43"></td>
+                <td id = "hospitalizedCumulative43"></td>
+                <td id = "inIcuCurrently43"></td>
+                <td id = "inIcuCumulative43"></td>
+                <td id = "onVentilatorCurrently43"></td>
+                <td id = "recovered43"></td>
+                <td id = "death43"></td>
+                <td id = "totalTestResultsIncrease43"></td>
+            </tr>
+            <tr>
+                <td>South Carolina</td>
+                <td id = "checkTimeEt44"></td>
+                <td id = "state44"></td>
+                <td id = "positive44"></td>
+                <td id = "negative44"></td>
+                <td id = "pending44"></td>
+                <td id = "hospitalizedCurrently44"></td>
+                <td id = "hospitalizedCumulative44"></td>
+                <td id = "inIcuCurrently44"></td>
+                <td id = "inIcuCumulative44"></td>
+                <td id = "onVentilatorCurrently44"></td>
+                <td id = "recovered44"></td>
+                <td id = "death44"></td>
+                <td id = "totalTestResultsIncrease44"></td>
+            </tr>
+            <tr>
+                <td>South Dakota</td>
+                <td id = "checkTimeEt45"></td>
+                <td id = "state45"></td>
+                <td id = "positive45"></td>
+                <td id = "negative45"></td>
+                <td id = "pending45"></td>
+                <td id = "hospitalizedCurrently45"></td>
+                <td id = "hospitalizedCumulative45"></td>
+                <td id = "inIcuCurrently45"></td>
+                <td id = "inIcuCumulative45"></td>
+                <td id = "onVentilatorCurrently45"></td>
+                <td id = "recovered45"></td>
+                <td id = "death45"></td>
+                <td id = "totalTestResultsIncrease45"></td>
+            </tr>
+            <tr>
+                <td>Tennessee</td>
+                <td id = "checkTimeEt46"></td>
+                <td id = "state46"></td>
+                <td id = "positive46"></td>
+                <td id = "negative46"></td>
+                <td id = "pending46"></td>
+                <td id = "hospitalizedCurrently46"></td>
+                <td id = "hospitalizedCumulative46"></td>
+                <td id = "inIcuCurrently46"></td>
+                <td id = "inIcuCumulative46"></td>
+                <td id = "onVentilatorCurrently46"></td>
+                <td id = "recovered46"></td>
+                <td id = "death46"></td>
+                <td id = "totalTestResultsIncrease46"></td>
+            </tr>
+            <tr>
+                <td>Texas</td>
+                <td id = "checkTimeEt47"></td>
+                <td id = "state47"></td>
+                <td id = "positive47"></td>
+                <td id = "negative47"></td>
+                <td id = "pending47"></td>
+                <td id = "hospitalizedCurrently47"></td>
+                <td id = "hospitalizedCumulative47"></td>
+                <td id = "inIcuCurrently47"></td>
+                <td id = "inIcuCumulative47"></td>
+                <td id = "onVentilatorCurrently47"></td>
+                <td id = "recovered47"></td>
+                <td id = "death47"></td>
+                <td id = "totalTestResultsIncrease47"></td>
+            </tr>
+            <tr>
+                <td>Utah</td>
+                <td id = "checkTimeEt48"></td>
+                <td id = "state48"></td>
+                <td id = "positive48"></td>
+                <td id = "negative48"></td>
+                <td id = "pending48"></td>
+                <td id = "hospitalizedCurrently48"></td>
+                <td id = "hospitalizedCumulative48"></td>
+                <td id = "inIcuCurrently48"></td>
+                <td id = "inIcuCumulative48"></td>
+                <td id = "onVentilatorCurrently48"></td>
+                <td id = "recovered48"></td>
+                <td id = "death48"></td>
+                <td id = "totalTestResultsIncrease48"></td>
+            </tr>
+            <tr>
+                <td>Vermont</td>
+                <td id = "checkTimeEt51"></td>
+                <td id = "state51"></td>
+                <td id = "positive51"></td>
+                <td id = "negative51"></td>
+                <td id = "pending51"></td>
+                <td id = "hospitalizedCurrently51"></td>
+                <td id = "hospitalizedCumulative51"></td>
+                <td id = "inIcuCurrently51"></td>
+                <td id = "inIcuCumulative51"></td>
+                <td id = "onVentilatorCurrently51"></td>
+                <td id = "recovered51"></td>
+                <td id = "death51"></td>
+                <td id = "totalTestResultsIncrease51"></td>
+            </tr>
+            <tr>
+                <td>Virgin Islands</td>
+                <td id = "checkTimeEt50"></td>
+                <td id = "state50"></td>
+                <td id = "positive50"></td>
+                <td id = "negative50"></td>
+                <td id = "pending50"></td>
+                <td id = "hospitalizedCurrently50"></td>
+                <td id = "hospitalizedCumulative50"></td>
+                <td id = "inIcuCurrently50"></td>
+                <td id = "inIcuCumulative50"></td>
+                <td id = "onVentilatorCurrently50"></td>
+                <td id = "recovered50"></td>
+                <td id = "death50"></td>
+                <td id = "totalTestResultsIncrease50"></td>
+            </tr>
+            <tr>
+                <td>Virginia</td>
+                <td id = "checkTimeEt49"></td>
+                <td id = "state49"></td>
+                <td id = "positive49"></td>
+                <td id = "negative49"></td>
+                <td id = "pending49"></td>
+                <td id = "hospitalizedCurrently49"></td>
+                <td id = "hospitalizedCumulative49"></td>
+                <td id = "inIcuCurrently49"></td>
+                <td id = "inIcuCumulative49"></td>
+                <td id = "onVentilatorCurrently49"></td>
+                <td id = "recovered49"></td>
+                <td id = "death49"></td>
+                <td id = "totalTestResultsIncrease49"></td>
+            </tr>
+            <tr>
+                <td>Washington</td>
+                <td id = "checkTimeEt52"></td>
+                <td id = "state52"></td>
+                <td id = "positive52"></td>
+                <td id = "negative52"></td>
+                <td id = "pending52"></td>
+                <td id = "hospitalizedCurrently52"></td>
+                <td id = "hospitalizedCumulative52"></td>
+                <td id = "inIcuCurrently52"></td>
+                <td id = "inIcuCumulative52"></td>
+                <td id = "onVentilatorCurrently52"></td>
+                <td id = "recovered52"></td>
+                <td id = "death52"></td>
+                <td id = "totalTestResultsIncrease52"></td>
+            </tr>
+            <tr>
+                <td>Wisconsin</td>
+                <td id = "checkTimeEt53"></td>
+                <td id = "state53"></td>
+                <td id = "positive53"></td>
+                <td id = "negative53"></td>
+                <td id = "pending53"></td>
+                <td id = "hospitalizedCurrently53"></td>
+                <td id = "hospitalizedCumulative53"></td>
+                <td id = "inIcuCurrently53"></td>
+                <td id = "inIcuCumulative53"></td>
+                <td id = "onVentilatorCurrently53"></td>
+                <td id = "recovered53"></td>
+                <td id = "death53"></td>
+                <td id = "totalTestResultsIncrease53"></td>
+            </tr>
+            <tr>
+                <td>West Virginia</td>
+                <td id = "checkTimeEt54"></td>
+                <td id = "state54"></td>
+                <td id = "positive54"></td>
+                <td id = "negative54"></td>
+                <td id = "pending54"></td>
+                <td id = "hospitalizedCurrently54"></td>
+                <td id = "hospitalizedCumulative54"></td>
+                <td id = "inIcuCurrently54"></td>
+                <td id = "inIcuCumulative54"></td>
+                <td id = "onVentilatorCurrently54"></td>
+                <td id = "recovered54"></td>
+                <td id = "death54"></td>
+                <td id = "totalTestResultsIncrease54"></td>
+            </tr>
+            <tr>
+                <td>Wyoming</td>
+                <td id = "checkTimeEt55"></td>
+                <td id = "state55"></td>
+                <td id = "positive55"></td>
+                <td id = "negative55"></td>
+                <td id = "pending55"></td>
+                <td id = "hospitalizedCurrently55"></td>
+                <td id = "hospitalizedCumulative55"></td>
+                <td id = "inIcuCurrently55"></td>
+                <td id = "inIcuCumulative55"></td>
+                <td id = "onVentilatorCurrently55"></td>
+                <td id = "recovered55"></td>
+                <td id = "death55"></td>
+                <td id = "totalTestResultsIncrease55"></td>
+            </tr>
+        </table>
+    </div>
+    <h4><a href = "index.html">Back</a></h4>
+
+    <script>
+     var getStatewideStates = function()
+     {
+        var request = new XMLHttpRequest();
+        request.open("GET", "https://api.covidtracking.com/v1/states/current.json", true);
+        request.onload = function(){
+            var currentArray = JSON.parse(this.response);
+            for (var i = 0; i < currentArray.length; i++){
+                var data = currentArray[i]; 
+                document.getElementById("checkTimeEt" + i).innerHTML = data.checkTimeEt;
+                document.getElementById("state" + i).innerHTML = data.state;
+                document.getElementById("positive" + i).innerHTML = data.positive;
+                document.getElementById("negative" + i).innerHTML = data.negative;
+                document.getElementById("pending" + i).innerHTML = data.pending;
+                document.getElementById("hospitalizedCurrently" + i).innerHTML = data.hospitalizedCurrently;
+                document.getElementById("hospitalizedCumulative" + i).innerHTML = data.hospitalizedCumulative;
+                document.getElementById("inIcuCurrently" + i).innerHTML = data.inIcuCurrently;
+                document.getElementById("inIcuCumulative" + i).innerHTML = data.inIcuCumulative;
+                document.getElementById("onVentilatorCurrently" + i).innerHTML = data.onVentilatorCurrently;
+                document.getElementById("recovered" + i).innerHTML = data.recovered;
+                document.getElementById("death" + i).innerHTML = data.death;
+                document.getElementById("totalTestResultsIncrease" + i).innerHTML = data.totalTestResultsIncrease;
+            }
+        }
+        request.send();
+     } 
+    </script>
+    <body onload="getStatewideStates()">
+      <!-- Bootstrap core JS-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Third party plugin JS-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+      <!-- Core theme JS-->
+      <script src="js/scripts.js"></script>
+    </body>
+</html>
